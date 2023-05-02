@@ -1,0 +1,9 @@
+.welcome-header {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+}

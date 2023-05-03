@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Gajraj+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Press+Start+2P&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(180deg, #000000 0%, #111017 50%, #201d31 100%);
+    background: linear-gradient(180deg, #000000 0%, #0f0f11 50%, #0d0c14 100%);
     background-repeat: no-repeat;
     height: 100% !important;
 }

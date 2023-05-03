@@ -5,18 +5,15 @@ import HomePage from '../HomePage'
 import { Canvas } from '@react-three/fiber'
 import Navbar from '../Navbar'
 import Moon from '../Moon'
-
 function App() {
 
   return (
     <>
     <Navbar />
+    < HomePage/>
     <Canvas className='canvas pt-20'>
       <Moon />
     </Canvas>
-    <Routes>
-      <Route path="/" element={<HomePage />} />
-    </Routes>
     </>
   )
 }

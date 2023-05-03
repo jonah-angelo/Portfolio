@@ -16,14 +16,13 @@ export default function Moon(props) {
     })
     return (
         <>
-            {/* <ambientLight intensity={0.5} /> */}
             <pointLight color="#f6f3ea" position={[10, 10, 10]} intensity={1} />
             <Stars radius={300} depth={60} count={20000} saturation={0} fade={true}/>
             <mesh ref={moonref}>
                 <sphereGeometry args={[1.6, 32, 32]} />
                 <meshPhongMaterial attach='material' />
                 <meshStandardMaterial attach='material' map={texture} />
-                {/* <OrbitControls
+                <OrbitControls
                  enableZoom={false} 
                  enablePan={true} 
                  enableRotate={true}
@@ -31,7 +30,7 @@ export default function Moon(props) {
                  panSpeed={0.5}
                  autoRotate={false}
                  autoRotateSpeed={0.7}
-                 /> */}
+                 />
             </mesh>
         </>
     )

@@ -11,7 +11,7 @@ function App() {
   return (
     <>
     <Navbar />
-    <Canvas className='pt-20'>
+    <Canvas className='canvas pt-20'>
       <Moon />
     </Canvas>
     <Routes>

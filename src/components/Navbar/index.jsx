@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { Transition } from '@headlessui/react'
+import { Link } from 'react-router-dom'
+
 export default function Navbar () {
     const [isOpen, setIsOpen] = useState(false)
     return (
@@ -11,18 +13,19 @@ export default function Navbar () {
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
                     <a
-                      href="#"
+                      href="/"
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       Home
                     </a>
-  
+                  <Link to='/about'>
                     <a
                       href="#"
                       className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
                     >
                       About Me
                     </a>
+                  </Link>
   
                     <a
                       href="#"

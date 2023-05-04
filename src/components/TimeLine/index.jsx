@@ -12,7 +12,7 @@ export default function TimeLine() {
         icon={
             <div className='flex justify-center items-center w-full h-full'>
             <img
-                src= '../../GA.png'
+                src= '/GA.png'
                 alt='experience icon'
                 className='w-[80%] h=[60%] object-contain'
             />

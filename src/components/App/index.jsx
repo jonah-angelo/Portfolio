@@ -6,6 +6,7 @@ import About from '../About'
 import { Canvas } from '@react-three/fiber'
 import Navbar from '../Navbar'
 import Moon from '../Moon'
+import TimeLine from '../TimeLine'
 function App() {
 
   return (
@@ -16,6 +17,7 @@ function App() {
       <Moon />
     </Canvas>
     <About />
+    < TimeLine/>
     </>
   )
 }

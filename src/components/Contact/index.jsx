@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react'
 import emailjs from '@emailjs/browser';
 
+
 export default function Contact (){
     const formRef = useRef();
     const [form, setForm] = useState({
@@ -20,7 +21,30 @@ export default function Contact (){
         e.preventDefault();
         setLoading(true);
 
-        emailjs.send('service')
+        emailjs.send(
+            'service_qgknk78',
+            'template_z2dcq9k',
+            {
+                from_name: form.name,
+                to_name: 'Jonah',
+                from_email: form.email,
+                to_email: 'jonah.angelo@gmail.com',
+                message: form.message,
+            },
+            'YuUd77P0LLhbG7jmf'
+            )
+            .then(() => {
+                setLoading(false);
+                alert('Thank you for your message. I will get back to you soon!');
+                setForm({
+                    name: '',
+                    email: '',
+                    message: '',
+                })
+            }, (error) => {
+                setLoading(false);
+                alert('Something went wrong. Please try again.')
+            });
     }
     
     return (
@@ -43,7 +67,7 @@ export default function Contact (){
                             value={form.name}
                             onChange={handleChange}
                             placeholder="What's your name?"
-                            className="bg-tertiary py-4 py-6 placeholder:text-secondary 
+                            className="bg-[#1d1823] py-4 py-6 placeholder:text-secondary 
                             text-white rounded-lg outlined-none border-none font-medium"
                         />
                     </label>
@@ -55,7 +79,7 @@ export default function Contact (){
                             value={form.email}
                             onChange={handleChange}
                             placeholder="What's your email?"
-                            className="bg-tertiary py-4 py-6 placeholder:text-secondary 
+                            className="bg-[#1d1823] py-4 py-6 placeholder:text-secondary 
                             text-white rounded-lg outlined-none border-none font-medium"
                         />
                     </label>
@@ -67,7 +91,7 @@ export default function Contact (){
                             value={form.message}
                             onChange={handleChange}
                             placeholder="What do you want to say?"
-                            className="bg-tertiary py-4 py-6 placeholder:text-secondary 
+                            className="bg-[#1d1823] py-4 py-6 placeholder:text-secondary 
                             text-white rounded-lg outlined-none border-none font-medium"
                         />
                     </label>

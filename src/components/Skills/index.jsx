@@ -3,7 +3,7 @@ export default function Skills() {
         <>
             <div className="bg-[black] h-screen">
                 <h1 className="text-white ml-20 pt-20 text-2xl"> Skills </h1>
-                <div className="grid grid-cols-3 gap-4 ml-20 mt-20 mr-20">
+                <div className="grid lg:grid-cols-3 gap-4 mx-[40px] lg:gap-[100px] lg:ml-[600px] mt-20 md:grid-cols-2 sm:grid-cols-1 sm:text-center md:text-left lg:w-[1000px]">
                     <div className="bg-[#1E1E1E] rounded-lg shadow-lg p-4">
                         <h1 className="text-white text-2xl">Front End</h1>
                         <ul className="text-white">

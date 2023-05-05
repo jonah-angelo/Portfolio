@@ -21,7 +21,7 @@ function App() {
               <div className="flex items-center">
                 <div className="hidden md:block">
                   <div className="ml-10 flex items-baseline space-x-4">
-                  <div
+                  <Link to="/"
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
@@ -29,17 +29,17 @@ function App() {
                       }}
                       >
                       Home
-                    </div>
-                    <div
+                    </Link>
+                    <Link to="/about"
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
-                        setActive("");
+                        setActive("/about");
                         window.scrollTo(0, 1470);
                       }}
                       >
                       About
-                    </div>
-                    <div
+                    </Link>
+                    <Link to="/projects"
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
@@ -47,13 +47,16 @@ function App() {
                       }}
                       >
                       Projects
-                    </div>
-                    <a
-                      href="#"
-                      className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
-                    >
+                    </Link>
+                    <Link to="/contact"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      onClick={() => {
+                        setActive("");
+                        window.scrollTo(0, 0);
+                      }}
+                      >
                       Contact
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -116,33 +119,42 @@ function App() {
             {(ref) => (
               <div className="md:hidden" id="mobile-menu">
                 <div ref={ref} className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-                  <a
-                    href="#"
-                    className="hover:bg-gray-700 text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Home
-                  </a>
-  
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    About Me
-                  </a>
-  
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Projects
-                  </a>
-  
-                  <a
-                    href="#"
-                    className="text-gray-300 hover:bg-gray-700 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-                  >
-                    Contact
-                  </a>
+                <Link to="/"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      onClick={() => {
+                        setActive("");
+                        window.scrollTo(0, 0);
+                      }}
+                      >
+                      Home
+                    </Link>
+                    <Link to="/about"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      onClick={() => {
+                        setActive("/about");
+                        window.scrollTo(0, 1470);
+                      }}
+                      >
+                      About
+                    </Link>
+                    <Link to="/projects"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      onClick={() => {
+                        setActive("");
+                        window.scrollTo(0, 0);
+                      }}
+                      >
+                      Projects
+                    </Link>
+                    <Link to="/contact"
+                      className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
+                      onClick={() => {
+                        setActive("");
+                        window.scrollTo(0, 0);
+                      }}
+                      >
+                      Contact
+                    </Link>
                 </div>
               </div>
             )}

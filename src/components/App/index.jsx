@@ -9,6 +9,7 @@ import Moon from '../Moon'
 import TimeLine from '../TimeLine'
 import Skills from '../Skills'
 import Projects from '../Projects'
+import Contact from '../Contact'
  
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -169,6 +170,7 @@ function App() {
     < TimeLine/>
     <Skills/>
     <Projects/>
+    <Contact/>
     </>
   )
 }

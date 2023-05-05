@@ -45,7 +45,7 @@ function App() {
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        window.scrollTo(0, 2970);
                       }}
                       >
                       Projects
@@ -54,7 +54,7 @@ function App() {
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        window.scrollTo(0, 4470);
                       }}
                       >
                       Contact
@@ -143,7 +143,7 @@ function App() {
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        window.scrollTo(0, 2970);
                       }}
                       >
                       Projects
@@ -152,7 +152,7 @@ function App() {
                       className=" hover:bg-gray-700 text-white px-3 py-2 rounded-md text-sm font-medium"
                       onClick={() => {
                         setActive("");
-                        window.scrollTo(0, 0);
+                        window.scrollTo(0, 6000);
                       }}
                       >
                       Contact

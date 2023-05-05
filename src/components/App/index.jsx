@@ -8,6 +8,7 @@ import { Canvas } from '@react-three/fiber'
 import Moon from '../Moon'
 import TimeLine from '../TimeLine'
 import Skills from '../Skills'
+import Projects from '../Projects'
  
 function App() {
   const [isOpen, setIsOpen] = useState(false)
@@ -167,6 +168,7 @@ function App() {
     <About/>
     < TimeLine/>
     <Skills/>
+    <Projects/>
     </>
   )
 }

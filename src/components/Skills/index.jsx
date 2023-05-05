@@ -1,9 +1,9 @@
 export default function Skills() {
     return (
         <>
-            <div className="bg-[black] h-screen">
+            <div className="bg-[black] h-fit">
                 <h1 className="text-white ml-20 pt-20 text-2xl"> Skills </h1>
-                <div className="grid lg:grid-cols-3 gap-4 mx-[40px] lg:gap-[100px] lg:ml-[600px] mt-20 md:grid-cols-2 sm:grid-cols-1 sm:text-center md:text-left lg:w-[1000px]">
+                <div className="grid content-center lg:grid-cols-3 gap-4 mx-[40px] mt-20 md:grid-cols-2 sm:grid-cols-1 sm:text-center md:text-left pb-9 mb-9">
                     <div className="bg-[#1E1E1E] rounded-lg shadow-lg p-4">
                         <h1 className="text-white text-2xl">Front End</h1>
                         <ul className="text-white">
@@ -25,7 +25,6 @@ export default function Skills() {
                             <li>MySQL</li>
                             <li>MongoDB</li>
                             <li>Python</li>
-                            <li>Flask</li>
                         </ul>
                     </div>
                     <div className="bg-[#1E1E1E] rounded-lg shadow-lg p-4">
